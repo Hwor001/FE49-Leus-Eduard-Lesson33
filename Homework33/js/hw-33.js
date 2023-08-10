@@ -49,4 +49,4 @@ const Arrayofitems = Object.keys(subjects).map(subjectName => ({ name: subjectNa
 console.log("Массив объектов предметов", Arrayofitems);
 
 const Sortingthearraybyteachers = Object.keys(subjects).sort((a, b) => subjects[b].teachers - subjects[a].teachers);
-console.log("Отсортировка массива по количеству преподавателям", Sortingthearraybyteachers);
+console.log("Отсортировка массива по количеству преподавателей", Sortingthearraybyteachers);
