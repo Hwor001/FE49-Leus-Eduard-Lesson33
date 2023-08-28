@@ -24,12 +24,3 @@
   color: white;
 }
 
-button:hover {
-  background-color: rgb(41, 41, 189);
-}
-
-
-button:active {
-  background-color: rgb(199, 199, 207);
-  color: rgb(124, 124, 126);
-}
