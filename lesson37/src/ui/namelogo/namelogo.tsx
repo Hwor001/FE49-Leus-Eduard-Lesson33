@@ -12,9 +12,11 @@ export const NameLogo: React.FC<Props> = ({username}) => {
       </NameLogoWrapper>;
 };
 
-const NameLogoWrapper = styled.button`
+const NameLogoWrapper = styled.div`
 all: unset;
 padding: 12px;
 background-color: #3b3b89;
 margin-right:20px;
 `;
+
+export default NameLogo;

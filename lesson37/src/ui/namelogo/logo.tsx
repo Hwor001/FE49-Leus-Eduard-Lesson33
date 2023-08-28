@@ -13,9 +13,11 @@ export const Logo: React.FC<Props> = ({username}) => {
       </LogoWrapper>;
 };
 
-const LogoWrapper = styled.button`
+const LogoWrapper = styled.div`
 all: unset;
 padding: 24px;
 background-color: blue;
 margin-bottom: 10px;
 `;
+
+export default Logo;
