@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+.Header {
+  display: flex;
+  position: relative;
+}
+
+.seach-text {
+  background-color: #4949b1;
+  padding: 25px 570px 25px 0;
+  color: white;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -22,17 +33,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
