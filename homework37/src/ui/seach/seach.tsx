@@ -80,7 +80,7 @@ const SeachWrapper = styled.div`
 
 const BlueRectangle = styled.div`
   width: 735px;
-  height: 70px;
+  height: auto;
   background-color: blue;
 `;
 
