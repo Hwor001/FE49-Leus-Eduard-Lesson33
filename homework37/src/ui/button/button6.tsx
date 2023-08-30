@@ -15,5 +15,5 @@ const ButtonWrapper = styled.button`
 all: unset;
 cursor: pointer;
 position: absolute;
-transform: translate3d(-20px, 20px, 10px);
+transform: translate3d(-28px, 25px, 10px);
 `

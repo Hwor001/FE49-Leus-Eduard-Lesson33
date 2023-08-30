@@ -1,8 +1,8 @@
 import './App.css';
-import { Button } from './ui/button/button.tsx';
-import { Button2 } from './ui/button/button2.tsx';
-import { Button3 } from './ui/button/button3.tsx';
-import { Logo } from './ui/namelogo/logo.tsx';
+import { Button } from './ui/button/button';
+import { Button2 } from './ui/button/button2';
+import { Button3 } from './ui/button/button3';
+import { Logo } from './ui/namelogo/logo';
 
 function App() {
   return (
