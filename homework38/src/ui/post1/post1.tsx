@@ -37,6 +37,7 @@ const Post: React.FC<Props> = (props) => {
 const PostWrapper = styled.div`
    background-color: white;
    color: black;
+   width: 800px;
 `;
 
 export default Post;

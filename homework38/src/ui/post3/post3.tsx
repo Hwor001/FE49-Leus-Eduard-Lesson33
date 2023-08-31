@@ -36,6 +36,7 @@ const Post3: React.FC<Props> = (props) => {
 const PostWrapper = styled.div`
    background-color: white;
    color: black;
+   
 `;
 
 export default Post3;

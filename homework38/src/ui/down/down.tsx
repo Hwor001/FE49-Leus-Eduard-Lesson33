@@ -1,5 +1,5 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 import { Button } from '../button/button';
 import { Button2 } from '../button/button2';
 import image1 from './палец вверх.png';
@@ -15,7 +15,7 @@ interface Props {
 
    const Down: React.FC<Props> = () => {
       return (
-        <div>
+        <ButtonWrapper>
           <div>
             <Button onClick={() => console.log('clicked1')}>
               <img src={image1} alt="#" className="pic1" />
@@ -32,8 +32,13 @@ interface Props {
               <img src={image4} alt="#" className="pic1" />
             </Button4>
           </div>
-        </div>
+        </ButtonWrapper>
       );
     };
     
+    const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: space-between;
+    `
+
     export default Down;
