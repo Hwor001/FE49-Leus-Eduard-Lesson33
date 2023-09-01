@@ -11,6 +11,15 @@ function App() {
       <Post
           id={1}
           image={image1}
+          text="Post content here...Post content here...Post content here...Post content here...Post content here...Post content here...Post content here...Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample PostExample PostExample PostExample PostExample PostExample Post"
+          author="John Doe"
+        /><div className="post2">
+        <Post2
+          id={1}
+          image={image1}
           text="Post content here..."
           date="2023-08-31"
           // lesson_num={5}
@@ -26,7 +35,7 @@ function App() {
           title="Example Post"
           author="John Doe"
         />
-        <Post3
+        <Post2
           id={1}
           image={image1}
           text="Post content here..."
@@ -35,7 +44,79 @@ function App() {
           title="Example Post"
           author="John Doe"
         />
-      </header>
+        <Post2
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example Post"
+          author="John Doe"
+        /></div></header>
+        <div className='post3'>
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        />
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        />
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        />
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        />
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        />
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        />
+        <Post3
+          id={1}
+          image={image1}
+          text="Post content here..."
+          date="2023-08-31"
+          // lesson_num={5}
+          title="Example PostExample PostExample PostExample Post"
+          author="John Doe"
+        /></div>
     </div>
   );
 }

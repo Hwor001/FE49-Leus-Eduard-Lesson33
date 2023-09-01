@@ -26,3 +26,16 @@
 .pic1 {
   width: 24px;
 }
+
+.post2 {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+}
+
+id {
+  display: flex;
+}
+
+.post3 {
+
+}

@@ -14,4 +14,5 @@ export const Button4: React.FC<Props> = ({ children, disabled, onClick }) => {
 const ButtonWrapper = styled.button`
   all: unset;
   cursor: pointer;
+  margin-right: 5px;
 `;

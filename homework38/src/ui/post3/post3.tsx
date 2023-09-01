@@ -9,7 +9,7 @@ interface Props {
   date: string;
   lesson_num: number;
   title: string;
-  author: string;
+  author: number;
 }
 
 const Post3: React.FC<Props> = (props) => {
@@ -17,15 +17,15 @@ const Post3: React.FC<Props> = (props) => {
 
   return (
    <PostWrapper>
-   <div className='post1'>
-    <div className="post-card">
+   <PostWrapper2>
+    <PostWrapper3>
       <span>{date}</span>
       <h3>{title}</h3>
-      </div>
-   <div className="post-info">
+      </PostWrapper3>
+   <PostImg>
       {image && <img src={image} alt={`Post ${id}`} />}
-   </div>
-   </div>
+   </PostImg>
+   </PostWrapper2>
    <div className='d'>
       <Down/>
    </div>
@@ -36,7 +36,24 @@ const Post3: React.FC<Props> = (props) => {
 const PostWrapper = styled.div`
    background-color: white;
    color: black;
-   
+   width: 370px;
+   padding: 15px;
 `;
+
+const PostWrapper2 = styled.div`
+  display:flex;
+  justify-content: space-evenly;
+`
+
+const PostWrapper3 = styled.div`
+   text-align: initial;
+`
+
+const PostImg = styled.div`
+  width: 180px;
+  img {
+    width: -webkit-fill-available;
+  }
+`
 
 export default Post3;
