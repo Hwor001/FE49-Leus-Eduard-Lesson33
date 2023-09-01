@@ -52,25 +52,26 @@ export const Search: React.FC<Props> = ({ children }) => {
         <img src={lupa} alt='#' className='pic2' />
       </Button>
       <Logo username='Artem Malkin' />
-      {showLogo && (
-        <LogoWrapper>
+      <LogoWrapper>{showLogo && (
           <Logo username='Artem Malkin' />
-        </LogoWrapper>
-      )}
+      )}</LogoWrapper>
     </div>
   );
 };
 
 const LogoWrapper = styled.div`
   display: flex;
-  transform: translate3d(-980px, 70px, 10px);
+  transform: translate3d(0px, 70px, 0px);
+  position: absolute;
 `;
 
 const SeachWrapper = styled.div`
   all: unset;
+  width: 81%;
   input {
+    width: -webkit-fill-available;
     background-color: #4949b1;
-    padding: 26px 570px 26px 0;
+    padding: 26px 0 26px 0;
     color: white;
     &::placeholder {
       color: silver; /* Gray color for placeholder */
