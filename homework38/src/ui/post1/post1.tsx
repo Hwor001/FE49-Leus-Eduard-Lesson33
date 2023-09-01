@@ -21,7 +21,7 @@ const Post: React.FC<Props> = (props) => {
         <PostWrapper3>
           <span>{date}</span>
           <h2>{title}</h2>
-          <span>{text}</span>
+          <p>{text}</p>
         </PostWrapper3>
         <PostImg>
           {image && <img src={image} alt={`Post ${id}`} />}

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -37,5 +40,5 @@ id {
 }
 
 .post3 {
-
+  display: grid
 }
