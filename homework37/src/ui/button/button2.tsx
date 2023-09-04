@@ -16,5 +16,4 @@ all: unset;
 padding: 24px 5px;
 background-color: blue;
 cursor: pointer;
-margin-right: 1px;
 `

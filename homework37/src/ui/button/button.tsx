@@ -16,6 +16,4 @@ const ButtonWrapper = styled.button`
   padding: 24px 5px;
   background-color: blue;
   cursor: pointer;
-  margin-right: 1px;
-  margin-left: 1px;
 `;

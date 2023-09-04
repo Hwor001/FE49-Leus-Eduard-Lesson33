@@ -60,6 +60,10 @@ const TabButton = styled.button`
    padding: 5px;
 
    &:hover {
-      background-color: silver;
+      color: blue;
+   }
+
+   &:active{
+      color: silver;
    }
 `
