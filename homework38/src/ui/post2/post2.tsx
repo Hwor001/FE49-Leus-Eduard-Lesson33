@@ -24,9 +24,7 @@ const Post2: React.FC<Props> = (props) => {
          <h3>{title}</h3>
          </PostWrapper3>
          </PostWrapper2>
-         <div className='d'>
             <Down/>
-            </div>
    </PostWrapper>
   );
 };

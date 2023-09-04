@@ -19,25 +19,26 @@ const Post3: React.FC<Props> = (props) => {
    <PostWrapper>
    <PostWrapper2>
     <PostWrapper3>
-      <span>{date}</span>
+      <p>{date}</p>
       <h3>{title}</h3>
       </PostWrapper3>
    <PostImg>
       {image && <img src={image} alt={`Post ${id}`} />}
    </PostImg>
    </PostWrapper2>
-   <div className='d'>
       <Down/>
-   </div>
    </PostWrapper>
   );
 };
 
 const PostWrapper = styled.div`
-   background-color: white;
-   color: black;
-   width: 370px;
-   padding: 15px;
+  background-color: white;
+  color: black;
+  width: 370px;
+  padding: 15px;
+  & span {
+    font-size: 25px;
+  }
 `;
 
 const PostWrapper2 = styled.div`
