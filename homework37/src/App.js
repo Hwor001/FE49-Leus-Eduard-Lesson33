@@ -1,21 +1,32 @@
+import { TabPanel } from './ui/tabs/tads-panel.tsx';
 import './App.css';
-import { Button3 } from './ui/button/button3.tsx';
-import { Button4 } from './ui/button/button4.tsx';
-import { Button5 } from './ui/button/button5.tsx';
 import Seach from './ui/seach/seach.tsx';
 import Title from './ui/title/title.tsx';
+import React, { useState } from 'react';
+
 
 function App() {
+const tabItems = [
+  {id:'1',title:'All'},
+  {id:'2',title:'My favorites'},
+  {id:'3',title:'Popular'},
+]
+
+  const [activeTabId, setActiveTabId] = useState(tabItems[0].id) 
   return (
     <div className="App">
       <Seach/>
       <header className="App-header">
       <Title>Sing In</Title>
-       <div className="Tabs">
-      <Button3 onClick ={() => console.log('clicked3')}>All</Button3>
-      <Button4 onClick ={() => console.log('clicked4')}>My favorites</Button4>
-      <Button5 onClick ={() => console.log('clicked5')}>Popular</Button5>
-    </div>
+      <TabPanel 
+        items={[
+          {id:'1',title:'All'},
+          {id:'2',title:'My favorites'},
+          {id:'3',title:'Popular'},
+        ]}
+        activeId={activeTabId}
+        onTabClick={setActiveTabId}
+      />
       </header>
     </div>
     

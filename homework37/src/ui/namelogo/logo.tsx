@@ -17,6 +17,7 @@ const LogoWrapper = styled.div`
 all: unset;
 padding: 11px;
 background-color: blue;
+white-space: nowrap;
 `;
 
 export default Logo;

@@ -26,6 +26,10 @@ export const Search: React.FC<Props> = ({ children }) => {
     setInputValue('');
   };
 
+  const handleSearch = () => {
+    console.log(inputValue);
+  }
+
   return (
     <div className='Header'>
       <Button2 onClick={toggleLogo}>
@@ -48,7 +52,7 @@ export const Search: React.FC<Props> = ({ children }) => {
           </Button6>
         </SeachWrapper>
       )}
-      <Button onClick={() => console.log('clicked2')}>
+      <Button onClick={handleSearch}>
         <img src={lupa} alt='#' className='pic2' />
       </Button>
       <Logo username='Artem Malkin' />
@@ -67,7 +71,7 @@ const LogoWrapper = styled.div`
 
 const SeachWrapper = styled.div`
   all: unset;
-  width: 81%;
+  width: -webkit-fill-available;
   input {
     width: -webkit-fill-available;
     background-color: #4949b1;
@@ -80,7 +84,7 @@ const SeachWrapper = styled.div`
 `;
 
 const BlueRectangle = styled.div`
-  width: 735px;
+  width: -webkit-fill-available;;
   height: auto;
   background-color: blue;
 `;
