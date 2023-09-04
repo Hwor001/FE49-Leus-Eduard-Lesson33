@@ -15,20 +15,20 @@ import image8 from './три точки2.png';
 
 interface Props {
    
-   }
+  }
 
-   const Down: React.FC<Props> = () => {
-    const [liked, setLiked] = useState(false);
-    const [Disliked, setDisliked] = useState(false);
+  const Down: React.FC<Props> = () => {
+    const [like, setLiked] = useState(false);
+    const [Dislike, setDisliked] = useState(false);
     const [Flag, setFlag] = useState(false);
-    const [ThreeDots, setThreeDots] = useState(false);
+    const [MoreVisible, setMoreVisible] = useState(false);
     const [imageSrcLike, setImageSrcLike] = useState(image1);
     const [imageSrcDisliked, setImageSrcDisliked] = useState(image2);
     const [imageSrcFlag, setImageSrcFlag] = useState(image3);
-    const [imageSrcThreeDots, setImageSrcThreeDots] = useState(image4);
+    const [imageSrcMoreVisible, setImageSrcMoreVisible] = useState(image4);
     
   const handleLikeClick = () => {
-    if (liked) {
+    if (like) {
       setLiked(false);
       setImageSrcLike(image1);
     } else {
@@ -36,10 +36,10 @@ interface Props {
       setImageSrcLike(image5);
     }
   };
-  const likeCount = liked ? 28 : 27; 
+  const likeCount = like ? 28 : 27; 
 
   const handleDislikeClick = () => {
-    if (Disliked) {
+    if (Dislike) {
       setDisliked(false);
       setImageSrcDisliked(image2);
     } else {
@@ -47,6 +47,7 @@ interface Props {
       setImageSrcDisliked(image6);
     }
   };
+  const DislikeCount = Dislike ? 9 : 8;
 
   const handFlagClick = () => {
     if (Flag) {
@@ -58,13 +59,13 @@ interface Props {
     }
   };
 
-  const handThreeDotsClick = () => {
-    if (ThreeDots) {
-      setThreeDots(false);
-      setImageSrcThreeDots(image4);
+  const handMoreVisibleClick = () => {
+    if (MoreVisible) {
+      setMoreVisible(false);
+      setImageSrcMoreVisible(image4);
     } else {
-      setThreeDots(true);
-      setImageSrcThreeDots(image8);
+      setMoreVisible(true);
+      setImageSrcMoreVisible(image8);
     }
   };
   
@@ -78,25 +79,26 @@ interface Props {
             <Button2 onClick={handleDislikeClick}>
               <img src={imageSrcDisliked} alt="#" className="pic1" />
             </Button2>
+            <NomberWrapper>{DislikeCount}</NomberWrapper>
           </div>
           <div>
             <Button3 onClick={handFlagClick}>
               <img src={imageSrcFlag} alt="#" className="pic1" />
             </Button3>
-            <Button4 onClick={handThreeDotsClick}>
-              <img src={imageSrcThreeDots} alt="#" className="pic1" />
+            <Button4 onClick={handMoreVisibleClick}>
+              <img src={imageSrcMoreVisible} alt="#" className="pic1" />
             </Button4>
           </div>
         </ButtonWrapper>
       );
-    };
+  };
     
-    const ButtonWrapper = styled.div`
-    display: flex;
-    justify-content: space-between;
-    `
-    const NomberWrapper = styled.span`
-    margin-left: 3px;
-    margin-right: 3px;
-    `
-    export default Down;
+  const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  `
+  const NomberWrapper = styled.span`
+  margin-left: 3px;
+  margin-right: 3px;
+  `
+  export default Down;

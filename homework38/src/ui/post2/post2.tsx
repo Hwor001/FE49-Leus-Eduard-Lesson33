@@ -13,7 +13,15 @@ interface Props {
 }
 
 const Post2: React.FC<Props> = (props) => {
-  const { id, image, date, title } = props;
+  const { id, image, text, date, lesson_num, title, author } = props;
+
+  function truncateText(title: string, maxChars: number): string {
+   if (title.length <= maxChars) {
+     return title;
+   }
+   const truncatedText = title.substring(0, maxChars);
+   return `${truncatedText}...`;
+ }
 
   return (
    <PostWrapper>
@@ -21,7 +29,7 @@ const Post2: React.FC<Props> = (props) => {
       <PostWrapper3>
          {image && <img src={image} alt={`Post ${id}`} />}
          <p>{date}</p>
-         <h3>{title}</h3>
+         <h3>{truncateText(title, 40)}</h3>
          </PostWrapper3>
          </PostWrapper2>
             <Down/>
@@ -34,10 +42,14 @@ const PostWrapper = styled.div`
    background-color: white;
    color: black;
    padding: 15px;
+
+   & p,h3 {
+      margin: 0 0 5px 0;
+    }
 `;
 
 const PostWrapper2 = styled.div`
-
+   margin-bottom: 5px;
 `
 
 const PostWrapper3 = styled.div`
